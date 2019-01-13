@@ -1,0 +1,7 @@
+<app-add-car (addEvt)="updateCarList($event)"></app-add-car>
+
+<hr>
+
+<ul>
+  <app-item *ngFor='let car of cars; let i = index' [item]='car' [index]="i"></app-item>
+</ul>
